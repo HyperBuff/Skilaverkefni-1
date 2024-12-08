@@ -4,7 +4,9 @@ status: true
 dependencies:
   config:
     - field.field.node.plata.body
+    - field.field.node.plata.field_highlighted
     - field.field.node.plata.field_listamadur
+    - field.field.node.plata.field_log
     - field.field.node.plata.field_lysing
     - field.field.node.plata.field_mynd
     - field.field.node.plata.field_utgafuar
@@ -26,9 +28,26 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_highlighted:
+    type: boolean_checkbox
+    weight: 31
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
   field_listamadur:
     type: entity_reference_autocomplete
     weight: 28
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_log:
+    type: entity_reference_autocomplete
+    weight: 30
     region: content
     settings:
       match_operator: CONTAINS

@@ -1,0 +1,23 @@
+uuid: 4c6ba075-b9cf-4641-ae5f-42bab8a7b334
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_logun
+    - node.type.auglysing
+id: node.auglysing.field_logun
+field_name: field_logun
+entity_type: node
+bundle: auglysing
+label: Lögun
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media_type'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: entity_reference

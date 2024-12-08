@@ -26,13 +26,13 @@ content:
     label: inline
     settings:
       timezone_override: ''
-      format_type: medium
+      format_type: html_year
     third_party_settings: {  }
     weight: 4
     region: content
   field_hlekkur:
     type: link
-    label: hidden
+    label: inline
     settings:
       trim_length: 80
       url_only: false
@@ -51,7 +51,7 @@ content:
     region: content
   field_medlimir:
     type: entity_reference_label
-    label: above
+    label: inline
     settings:
       link: true
     third_party_settings: {  }
@@ -71,7 +71,7 @@ content:
     label: inline
     settings:
       timezone_override: ''
-      format_type: olivero_medium
+      format_type: html_year
     third_party_settings: {  }
     weight: 3
     region: content

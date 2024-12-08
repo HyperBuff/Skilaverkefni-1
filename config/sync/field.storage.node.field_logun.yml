@@ -1,0 +1,20 @@
+uuid: 55231920-f313-4a7e-8d5f-8c11f2cb2cb5
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+    - node
+id: node.field_logun
+field_name: field_logun
+entity_type: node
+type: entity_reference
+settings:
+  target_type: media_type
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

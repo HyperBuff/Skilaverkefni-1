@@ -11,10 +11,12 @@ dependencies:
     - field.field.node.utgefandi.field_medlimir
     - field.field.node.utgefandi.field_myndir
     - field.field.node.utgefandi.field_stofndagur
+    - image.style.large
     - node.type.utgefandi
   module:
     - datetime
     - link
+    - media
     - text
     - user
 id: node.utgefandi.default
@@ -24,16 +26,16 @@ mode: default
 content:
   field_danardagur:
     type: datetime_default
-    label: above
+    label: inline
     settings:
       timezone_override: ''
-      format_type: medium
+      format_type: olivero_medium
     third_party_settings: {  }
     weight: 3
     region: content
   field_hlekkur:
     type: link
-    label: above
+    label: hidden
     settings:
       trim_length: 80
       url_only: false
@@ -45,50 +47,52 @@ content:
     region: content
   field_logo:
     type: entity_reference_entity_view
-    label: above
+    label: hidden
     settings:
       view_mode: default
       link: false
     third_party_settings: {  }
-    weight: 7
+    weight: 0
     region: content
   field_lysing:
     type: text_default
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 0
+    weight: 1
     region: content
   field_medlimir:
     type: entity_reference_label
-    label: above
+    label: inline
     settings:
       link: true
     third_party_settings: {  }
     weight: 5
     region: content
   field_myndir:
-    type: entity_reference_entity_view
+    type: media_thumbnail
     label: above
     settings:
-      view_mode: default
-      link: false
+      image_link: ''
+      image_style: large
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
-    weight: 1
+    weight: 6
     region: content
   field_stofndagur:
     type: datetime_default
-    label: above
+    label: inline
     settings:
       timezone_override: ''
-      format_type: medium
+      format_type: olivero_medium
     third_party_settings: {  }
     weight: 2
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 6
+    weight: 7
     region: content
 hidden:
   body: true

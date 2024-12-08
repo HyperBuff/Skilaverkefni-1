@@ -5,6 +5,9 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.auglysing.body
+    - field.field.node.auglysing.field_hlekkur
+    - field.field.node.auglysing.field_logun
+    - field.field.node.auglysing.field_mynd
     - node.type.auglysing
   module:
     - text
@@ -27,4 +30,7 @@ content:
     third_party_settings: {  }
     weight: 100
     region: content
-hidden: {  }
+hidden:
+  field_hlekkur: true
+  field_logun: true
+  field_mynd: true

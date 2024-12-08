@@ -16,7 +16,7 @@ dependencies:
 _core:
   default_config_hash: cFrlqjtkTfvY3RGccjJkPf1SGIfJ942IrxTLWAO4mgA
 id: authenticated
-label: 'Authenticated user'
+label: 'Innskráður Notandi'
 weight: 1
 is_admin: false
 permissions:

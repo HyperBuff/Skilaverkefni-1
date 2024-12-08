@@ -42,3 +42,6 @@ private
 tmp
 .editorconfig
 .gitattributes
+
+database
+database/*

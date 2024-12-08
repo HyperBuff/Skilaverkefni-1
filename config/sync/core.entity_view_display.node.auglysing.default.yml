@@ -4,8 +4,12 @@ status: true
 dependencies:
   config:
     - field.field.node.auglysing.body
+    - field.field.node.auglysing.field_hlekkur
+    - field.field.node.auglysing.field_logun
+    - field.field.node.auglysing.field_mynd
     - node.type.auglysing
   module:
+    - link
     - text
     - user
 id: node.auglysing.default
@@ -19,6 +23,35 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 101
+    region: content
+  field_hlekkur:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_logun:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_mynd:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 1
     region: content
   links:
     settings: {  }

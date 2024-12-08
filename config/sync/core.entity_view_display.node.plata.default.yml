@@ -4,7 +4,9 @@ status: true
 dependencies:
   config:
     - field.field.node.plata.body
+    - field.field.node.plata.field_highlighted
     - field.field.node.plata.field_listamadur
+    - field.field.node.plata.field_log
     - field.field.node.plata.field_lysing
     - field.field.node.plata.field_mynd
     - field.field.node.plata.field_utgafuar
@@ -27,6 +29,14 @@ content:
     third_party_settings: {  }
     weight: 4
     region: content
+  field_log:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 6
+    region: content
   field_lysing:
     type: text_default
     label: hidden
@@ -48,7 +58,7 @@ content:
     label: inline
     settings:
       timezone_override: ''
-      format_type: medium
+      format_type: olivero_medium
     third_party_settings: {  }
     weight: 3
     region: content
@@ -67,3 +77,4 @@ content:
     region: content
 hidden:
   body: true
+  field_highlighted: true
