@@ -11,11 +11,11 @@ effects:
     weight: -9
     data:
       extension: webp
-  e51df3d6-1a30-40d0-bccd-e424edb42da8:
-    uuid: e51df3d6-1a30-40d0-bccd-e424edb42da8
-    id: image_scale
-    weight: -10
+  49d84b76-f8cf-4795-a12c-717c24b1dd3c:
+    uuid: 49d84b76-f8cf-4795-a12c-717c24b1dd3c
+    id: image_scale_and_crop
+    weight: 3
     data:
       width: 1200
       height: 400
-      upscale: false
+      anchor: center-center

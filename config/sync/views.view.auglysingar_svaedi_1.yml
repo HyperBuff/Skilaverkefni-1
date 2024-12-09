@@ -5,9 +5,11 @@ dependencies:
   config:
     - field.storage.node.field_hlekkur
     - field.storage.node.field_mynd
+    - image.style.banner_tall
     - node.type.auglysing
   module:
     - link
+    - media
     - node
     - user
 id: auglysingar_svaedi_1
@@ -75,9 +77,12 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: entity_reference_entity_view
+          type: media_thumbnail
           settings:
-            view_mode: full_width
+            image_link: ''
+            image_style: banner_tall
+            image_loading:
+              attribute: lazy
           group_column: target_id
           group_columns: {  }
           group_rows: true
@@ -175,7 +180,7 @@ display:
         options:
           perm: 'access content'
       cache:
-        type: tag
+        type: none
         options: {  }
       empty: {  }
       sorts:
@@ -256,6 +261,7 @@ display:
     display_plugin: block
     position: 1
     display_options:
+      display_description: 'Sidebar - Banner Tall'
       display_extenders: {  }
       block_description: 'Auglýsingar 1'
     cache_metadata:

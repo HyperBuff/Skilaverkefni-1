@@ -10,6 +10,7 @@ dependencies:
     - node.type.auglysing
   module:
     - link
+    - options
     - text
     - user
 id: node.auglysing.default
@@ -37,10 +38,9 @@ content:
     weight: 5
     region: content
   field_logun:
-    type: entity_reference_label
+    type: list_default
     label: above
-    settings:
-      link: true
+    settings: {  }
     third_party_settings: {  }
     weight: 102
     region: content

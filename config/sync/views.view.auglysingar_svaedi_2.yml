@@ -5,7 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_hlekkur
     - field.storage.node.field_mynd
-    - image.style.banner_tall
+    - image.style.banner_wide
     - node.type.auglysing
   module:
     - link
@@ -80,7 +80,7 @@ display:
           type: media_thumbnail
           settings:
             image_link: ''
-            image_style: banner_tall
+            image_style: banner_wide
             image_loading:
               attribute: lazy
           group_column: target_id
@@ -180,7 +180,7 @@ display:
         options:
           perm: 'access content'
       cache:
-        type: tag
+        type: none
         options: {  }
       empty: {  }
       sorts:
@@ -219,6 +219,11 @@ display:
           plugin_id: bundle
           value:
             auglysing: auglysing
+          group: 1
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
       style:
         type: default
         options:
@@ -261,6 +266,7 @@ display:
     display_plugin: block
     position: 1
     display_options:
+      display_description: 'Content Below - Banner Wide'
       display_extenders: {  }
       block_description: 'Auglýsingar 2'
     cache_metadata:
